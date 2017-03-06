@@ -1,0 +1,82 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    margin: 0em 4em 0.5em 4em;
+}
+
+header,
+footer,
+article {
+    color: white;
+    margin: 0em 4em 0.5em 4em;
+}
+
+footer {
+    background-color: crimson;
+    border-radius: 5px;
+    /*padding: 0.5em 1em 0.5em 1em;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+#header-wrapper {
+    background-color: crimson;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+}
+
+#logo {
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.social-top {
+    height: 2.5em;
+}
+
+.social-icon {
+    float: right;
+}
+
+.social-icon>img {
+    width: 2em;
+    height: 2em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+#nav {
+    height: 3em;
+    width: 100%;
+}
+
+#header-bot {
+    display: inline;
+}
+
+.menuitem {
+    display: inline;
+    color: white;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    line-height: 2.5em;
+    font-size: 1.2rem;
+}
+
+.menuitem:hover {
+    background-color: white;
+    border-radius: 2px;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    color: crimson;
+}
+
+#footer-copyright {
+    padding: 0.5em 1em 0.5em 1em;
+}
