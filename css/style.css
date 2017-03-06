@@ -12,9 +12,9 @@ article {
 }
 
 footer {
-    background-color: crimson;
-    border-radius: 5px;
-    /*padding: 0.5em 1em 0.5em 1em;*/
+    border-top: solid 1px;
+    padding-top: 5px;
+    border-color: crimson;
 }
 
 a {
@@ -77,6 +77,55 @@ a {
     color: crimson;
 }
 
+#content-img {
+    padding-bottom: 5px;
+}
+
+#content-img>img {
+    border-bottom: solid 1px;
+    padding-bottom: 5px;
+    border-color: crimson;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+#content {
+    color: black;
+}
+
+.text-area {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    column-gap: 3em;
+    -webkit-column-gap: 3em;
+    -moz-column-gap: 3em;
+}
+
+#text-wrapper>h2 {
+    text-align: center;
+}
+
+.text-left {
+    float: left;
+}
+
+.text-right {
+    float: right;
+}
+
 #footer-copyright {
+    background-color: crimson;
+    border-radius: 5px;
     padding: 0.5em 1em 0.5em 1em;
+}
+
+#geolocation>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    width: 80%;
 }
