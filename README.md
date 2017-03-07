@@ -1,4 +1,4 @@
-![alt tag](http://imgur.com/SJDSh1Q)
+![alt tag](http://i.imgur.com/SJDSh1Q.png)
 
 
 In this repo you will find all my homeworks for class IT255 - Web Systems 1.
