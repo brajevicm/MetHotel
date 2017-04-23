@@ -1,3 +1,7 @@
+<?php
+include 'includes/login.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,6 +70,9 @@
                             Galerija
                         </div>
                     </a>
+                    <form class="login-form" action="includes/logout.php" method="post">
+                        <button type="submit" name="submit">Log out</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -87,11 +94,12 @@
                             <h2>O hotelu</h2>
                             <div class="text-area">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis rem ad, deserunt in sapiente sunt nam exercitationem quae dolor quaerat molestias repudiandae, omnis autem aliquam asperiores soluta sequi nemo quis.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eaque reprehenderit nisi animi nesciunt reiciendis fugiat cum enim, eveniet, fugit in! Fugit velit adipisci, recusandae reprehenderit modi harum, neque vitae?
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eaque reprehenderit nisi animi nesciunt reiciendis fugiat cum enim, eveniet, fugit in! Fugit velit adipisci, recusandae reprehenderit modi harum, neque
+                                    vitae?
                                 </p>
                                 <p>Qui harum dolorum nostrum sit ea autem laborum. Ea vitae ut occaecati. Quas ut et. Et magni quaerat similique deleniti vero incidunt officiis. Eum vel quo nesciunt ea distinctio.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eveniet sit omnis, veritatis laboriosam excepturi ratione commodi ut saepe architecto voluptate, doloribus, laudantium ea eos in. Accusantium laboriosam distinctio,
-                                    fuga.
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eveniet sit omnis, veritatis laboriosam excepturi ratione commodi ut saepe architecto voluptate, doloribus, laudantium ea eos in. Accusantium laboriosam
+                                    distinctio, fuga.
                             </div>
                         </div>
                     </a>
@@ -102,12 +110,13 @@
                             <h2>Kongresni centar</h2>
                             <div class="text-area-2">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis rem ad, deserunt in sapiente sunt nam exercitationem quae dolor quaerat molestias repudiandae, omnis autem aliquam asperiores soluta sequi nemo quis.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eaque reprehenderit nisi animi nesciunt reiciendis fugiat cum enim, eveniet, fugit in! Fugit velit adipisci, recusandae reprehenderit modi harum, neque vitae?
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eaque reprehenderit nisi animi nesciunt reiciendis fugiat cum enim, eveniet, fugit in! Fugit velit adipisci, recusandae reprehenderit modi harum, neque
+                                    vitae?
                                 </p>
                                 <img src="images/congress.jpg " alt="Kongres centar ">
                                 <p>Qui harum dolorum nostrum sit ea autem laborum. Ea vitae ut occaecati. Quas ut et. Et magni quaerat similique deleniti vero incidunt officiis. Eum vel quo nesciunt ea distinctio.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eveniet sit omnis, veritatis laboriosam excepturi ratione commodi ut saepe architecto voluptate, doloribus, laudantium ea eos in. Accusantium laboriosam distinctio,
-                                    fuga.
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eveniet sit omnis, veritatis laboriosam excepturi ratione commodi ut saepe architecto voluptate, doloribus, laudantium ea eos in. Accusantium laboriosam
+                                    distinctio, fuga.
                             </div>
                         </div>
                     </a>
@@ -118,11 +127,12 @@
                             <h2>Wellness centar</h2>
                             <div class="text-area-2">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis rem ad, deserunt in sapiente sunt nam exercitationem quae dolor quaerat molestias repudiandae, omnis autem aliquam asperiores soluta sequi nemo quis.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eaque reprehenderit nisi animi nesciunt reiciendis fugiat cum enim, eveniet, fugit in! Fugit velit adipisci, recusandae reprehenderit modi harum, neque vitae?
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eaque reprehenderit nisi animi nesciunt reiciendis fugiat cum enim, eveniet, fugit in! Fugit velit adipisci, recusandae reprehenderit modi harum, neque
+                                    vitae?
                                 </p>
                                 <img src="images/wellness.jpg " alt="Wellness centar">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eveniet sit omnis, veritatis laboriosam excepturi ratione commodi ut saepe architecto voluptate, doloribus, laudantium ea eos in. Accusantium laboriosam distinctio,
-                                    fuga.
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eveniet sit omnis, veritatis laboriosam excepturi ratione commodi ut saepe architecto voluptate, doloribus, laudantium ea eos in. Accusantium laboriosam
+                                    distinctio, fuga.
                             </div>
                         </div>
                     </a>
