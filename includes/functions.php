@@ -1,6 +1,5 @@
 <?php
 require_once 'config.php';
-$error = '';
 function registerUser($firstname, $lastname, $mail, $password)
 {
     global $conn;
@@ -12,7 +11,7 @@ function registerUser($firstname, $lastname, $mail, $password)
         $query->execute();
         $query->close();
     } else {
-        $error .= 'User already exists.';
+        $error = 'User already exists.';
     }
 }
 
