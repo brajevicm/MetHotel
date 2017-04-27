@@ -19,9 +19,11 @@
                     <h4 class="hide-me">Menu</h4>
                     <div class="col-md-6 hide-me">
                         <ul class="pages hide-me">
-                            <li><a class="page-scroll" href="#page-top">Home</a></li>
-                            <li><a class="page-scroll" href="#timeline">Timeline</a></li>
-                            <li><a class="page-scroll" href="#team">Team</a></li>
+                            <li><a class="page-scroll" href="#page-top">About</a></li>
+                            <li><a class="page-scroll" href="#congress">Congress center</a></li>
+                            <li><a class="page-scroll" href="#wellness">Wellness center</a></li>
+                            <li><a class="page-scroll" href="#pricing">Pricing</a></li>
+                            <li><a class="page-scroll" href="#gallery">Gallery</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 hide-me">

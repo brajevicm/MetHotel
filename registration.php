@@ -1,3 +1,17 @@
+<?php
+require_once 'includes/login.php';
+require_once 'includes/register.php';
+
+if (isset($_SESSION['logged'])) {
+    header("location: home.php");
+}
+
+if (isset($_SESSION['error'])) {
+    $error =  $_SESSION['error'];
+    unset($_SESSION['error']);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,84 +32,58 @@
 
     <?php require 'templates/header.php' ?>
 
-    
-<form class="form-horizontal">
-<fieldset>
+    <form class="form-horizontal" action="includes/register.php" method="post">
+        <fieldset>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="1">First Name</label>  
-  <div class="col-md-4">
-  <input id="1" name="1" type="text" placeholder="" class="form-control input-md" required="">
-  <span class="help-block">Help</span>  
-  </div>
-</div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="1">First Name</label>
+                <div class="col-md-4">
+                    <input id="1" name="firstname" type="text" placeholder="" class="form-control input-md" required="">
+                </div>
+            </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="2">Last Name</label>  
-  <div class="col-md-4">
-  <input id="2" name="2" type="text" placeholder="" class="form-control input-md" required="">
-  <span class="help-block">Help</span>  
-  </div>
-</div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="2">Last Name</label>
+                <div class="col-md-4">
+                    <input id="2" name="lastname" type="text" placeholder="" class="form-control input-md" required="true">
+                </div>
+            </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="3">CNIC No</label>  
-  <div class="col-md-4">
-  <input id="3" name="3" type="text" placeholder="" class="form-control input-md" required="">
-  <span class="help-block">Help</span>  
-  </div>
-</div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="3">Mail address</label>
+                <div class="col-md-4">
+                    <input id="3" name="mail" type="mail" placeholder="" class="form-control input-md" required="true">
+                </div>
+            </div>
 
-<!-- Multiple Checkboxes -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Gender">Gender</label>
-  <div class="col-md-4">
-  <div class="checkbox">
-    <label for="Gender-0">
-      <input type="checkbox" name="Gender" id="Gender-0" value="1">
-      Male
-    </label>
-	</div>
-  <div class="checkbox">
-    <label for="Gender-1">
-      <input type="checkbox" name="Gender" id="Gender-1" value="2">
-      Female
-        </label>
-        </div>
-    </div>
-    </div>
+            <!-- Password input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="5">Enter Password </label>
+                <div class="col-md-4">
+                    <input id="5" name="password" type="password" placeholder="" class="form-control input-md" required="true">
+                </div>
+            </div>
 
-    <!-- Password input-->
-    <div class="form-group">
-    <label class="col-md-4 control-label" for="5">Enter Password </label>
-    <div class="col-md-4">
-        <input id="5" name="5" type="password" placeholder="" class="form-control input-md" required="">
-        <span class="help-block">Help</span>
-    </div>
-    </div>
+            <!-- Password input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="6">Re-Enter Password</label>
+                <div class="col-md-4">
+                    <input id="6" name="re_password" type="password" placeholder="" class="form-control input-md" required="true">
+                </div>
+            </div>
 
-    <!-- Password input-->
-    <div class="form-group">
-    <label class="col-md-4 control-label" for="6">Re-Enter Password</label>
-    <div class="col-md-4">
-        <input id="6" name="6" type="password" placeholder="" class="form-control input-md" required="">
-        <span class="help-block">Help</span>
-    </div>
-    </div>
+            <!-- Button (Double) -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="1"></label>
+                <div class="col-md-8">
+                    <button id="1" name="register" class="btn btn-success">Sign up</button>
+                </div>
+            </div>
 
-    <!-- Button (Double) -->
-    <div class="form-group">
-    <label class="col-md-4 control-label" for="1"></label>
-    <div class="col-md-8">
-        <button id="1" name="1" class="btn btn-success">Save</button>
-        <button id="2" name="2" class="btn btn-danger">Discard</button>
-    </div>
-    </div>
-
-    </fieldset>
+        </fieldset>
     </form>
 
 

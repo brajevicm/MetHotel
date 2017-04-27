@@ -16,17 +16,20 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="menuitem"><a href="#menuitem-1">O hotelu</a></li>
-                            <li class="menuitem"><a href="#menuitem-2">Kongresni centar</a></li>
-                            <li class="menuitem"><a href="#menuitem-3">Wellness centar</a></li>
-                            <li class="menuitem"><a href="#menuitem-4">Cenovnik</a></li>
-                            <li class="menuitem"><a href="#menuitem-5">Galerija</a></li>
+                            <li class="menuitem"><a href="#about">About</a></li>
+                            <li class="menuitem"><a href="#congress">Congress center</a></li>
+                            <li class="menuitem"><a href="#wellness">Wellness center</a></li>
+                            <li class="menuitem"><a href="#pricing">Pricing</a></li>
+                            <li class="menuitem"><a href="#gallery">Gallery</a></li>
+                            <?php if (isset($_SESSION['logged'])) { ?>
+                            <li class="menuitem"><a href="#reservations">Reservations</a></li>
+                            <?php } ?>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <?php if (isset($_SESSION['logged'])) { ?>
                             <li>
-                                <p class="navbar-text">Signed in as 
-                                    <a href="#" class="navbar-link">
+                                <p class="navbar-text">Signed in as:&nbsp;&nbsp;&nbsp;
+                                    <a href="account.php" class="navbar-link">
                                         <?php echo $_SESSION['logged'];?>
                                     </a>
                                 </p>
@@ -47,7 +50,7 @@
                                                 <form class="form" role="form" method="post" action="" accept-charset="UTF-8" id="login-nav">
                                                     <div class="form-group">
                                                         <label class="sr-only">Email address</label>
-                                                        <input name="mail" class="form-control" id="exampleInputEmail" placeholder="Email address" required>
+                                                        <input type="mail" name="mail" class="form-control" id="exampleInputEmail" placeholder="Email address" required>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="sr-only">Password</label>

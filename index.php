@@ -1,6 +1,5 @@
 <?php
 require_once 'includes/login.php';
-require_once 'includes/register.php';
 
 if (isset($_SESSION['logged'])) {
     header("location: home.php");

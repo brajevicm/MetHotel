@@ -1,6 +1,5 @@
 <?php
 require_once 'functions.php';
-$error = '';
 if (isset($_POST['register'])) {
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
@@ -9,9 +8,9 @@ if (isset($_POST['register'])) {
 
     if (!empty($firstname) && !empty($lastname) && !empty($mail) && !empty($password)) {
         registerUser($firstname, $lastname, $mail, $password);
-        header('login.php');
+        header('location: ../index.php');
     } else {
-        $error .= 'All fields required.';
+        $error = 'All fields required.';
         $_SESSION['error'] = $error;
     }
 }

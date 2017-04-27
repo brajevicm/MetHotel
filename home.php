@@ -21,12 +21,11 @@ include 'includes/login.php';
 <body>
     <?php require 'templates/header.php' ?>
 
-    <article>
+    <!--<article>
         <section>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <!--<div id="content-wrapper">-->
                         <ul id="slides">
                             <li class="slide active"><img src="images/slider1.jpg " alt="Background"></li>
                             <li class="slide"><img src="images/slider2.jpg" alt="Background"></li>
@@ -134,7 +133,7 @@ include 'includes/login.php';
                 </div>
             </div>
         </section>
-    </article>
+    </article>-->
 
     <?php require 'templates/footer.php' ?>    
 
